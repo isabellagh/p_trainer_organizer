@@ -7,7 +7,6 @@ class CreateWorkouts < ActiveRecord::Migration[6.1]
       t.integer :reps
       t.integer :weight
       t.integer :client_id
-      t.integer :user_id
 
       t.timestamps
     end
