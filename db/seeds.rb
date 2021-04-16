@@ -15,5 +15,5 @@ end
 
 30.times do
     
-    Workout.create(date: Faker::Date.between(from: '2014-09-23', to: '2014-09-25'), exercise: Faker::Lorem.words, sets: Faker::Number.between(from: 1, to: 5), reps: Faker::Number.between(from: 5, to: 100), weight: Faker::Number.between(from: 1, to: 200))
+    Workout.create(date: Faker::Date.between(from: '2014-09-23', to: '2014-09-25'), exercise: Faker::Lorem.words, sets: Faker::Number.between(from: 1, to: 5), reps: Faker::Number.between(from: 5, to: 100), weight: Faker::Number.between(from: 1, to: 200), client_id: rand(1..20))
 end 
