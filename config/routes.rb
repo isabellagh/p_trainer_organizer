@@ -5,4 +5,10 @@ Rails.application.routes.draw do
       resources :clients, only: [:index]
     end
   end
+
+  namespace :api do
+    namespace :v1 do
+      resources :workouts, only: [:index, :create]
+    end 
+  end
 end
